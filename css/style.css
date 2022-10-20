@@ -1,0 +1,481 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+
+body{
+    background-color: maroon;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid maroon;
+    box-sizing: border-box;
+}
+
+body.dark-theme .modal input{
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid darkslateblue;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 2px solid maroon;
+    width: 60%; 
+}
+
+body.dark-theme .modal-content{
+    color: aliceblue;
+    background-color: black;
+    border: 2px solid darkslateblue;
+}
+
+body.dark-theme .dimensi div{
+    border: 1px solid darkslateblue;
+}
+
+.dimensi{
+    width: 100%;
+    /*border: 1px solid maroon;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.dimensi div{
+    width: 100%;
+    border: 1px solid maroon;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.modal .container{
+    padding: 16px;
+}
+
+.cancelbtn {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    width: auto;
+    padding: 10px 20px;
+    background-color: maroon;
+    color: aliceblue;
+}
+
+body.dark-theme .cancelbtn{
+    background-color: darkslateblue;
+}
+
+.navigation .loginbutton{
+    margin-right: 30px;
+}
+
+.logout{
+    display: flex;
+}
+
+.tambah{
+    font-size: 50px;
+    transition: 0.4s;
+    text-align: center;
+    font-weight: bold;
+    background-color: maroon;
+    color: aliceblue;
+    margin: auto;
+    margin-left: 10px;
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+body.dark-theme .tambah{
+    background-color: darkslateblue;
+}
+
+.loginbutton{
+    font-size: 18px;
+    transition: 0.4s;
+    text-align: center;
+    font-weight: bold;
+    background-color: maroon;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+body.dark-theme .loginbutton{
+    background-color: darkslateblue;
+    color: aliceblue;
+}
+
+button:hover{
+    opacity: 60%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+.navigation{
+    transition: all 2s;
+    font-size: 20px;
+    color: maroon;
+    text-align: center;
+    background-color: #f0f8ff;
+    width: 100%;
+    font-weight: bold;
+}
+
+#logo{
+    text-align: center;
+    margin-left: 40px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.box-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /*margin-left: 10%;*/
+    /*margin-right: 10%;*/
+}
+
+.box-navigation #nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.box-navigation #nav li a{
+    padding: 25px;
+    text-decoration: none;
+    color: maroon;
+}
+
+.box-navigation #nav li{
+    margin-left: 10px;
+    padding: 15px;
+}
+
+.box-navigation #nav input{
+    margin: 20px;
+    width: 20px;
+}
+
+.box-navigation #nav p{
+    padding: 15px;
+}
+
+.box-navigation #nav li:hover{
+    background-color: maroon;
+}  
+
+.box-navigation #nav li a:hover{
+    color: aliceblue;
+}  
+
+.landing{
+    transition: all 2s;
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landing h2{
+    text-align: center;
+    font-size: 80px;
+}
+
+.koleksi{
+    transition: all 2s;
+    background-color:aliceblue;
+}
+
+.container{
+    transition: all 2s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .heading .head1{
+    font-size: 50px;
+    font-weight: bold;
+    color: maroon;
+    background: none;
+    border: none;
+}
+
+.container .heading .head1:hover{
+    cursor: pointer;
+}
+
+.container .box{
+    transition: all 2s;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 2%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+body.dark-theme .isi{
+    color: aliceblue;
+}
+
+body.dark-theme .container .box .poto h2{
+    color: aliceblue;
+    border-bottom: 3px solid aliceblue;
+}
+
+.isi{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .box .poto h2{
+    text-align: center;
+    margin: auto;
+    color: aliceblue;
+    width: 80%;
+    border-bottom: 3px solid aliceblue;
+}
+
+.container .box .poto{
+    display: flex;
+    flex-direction: column;
+    background-color: maroon;
+    margin: 0 1%;
+    box-shadow: 0 2px 10px maroon;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.container .box .poto img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.site-footer{
+    padding:20px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:aliceblue;
+}
+
+.site-footer hr{
+    width: 60%;
+}
+
+.site-footer h6{   
+    color:#fff;
+    font-size:20px;
+    text-transform:uppercase;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+.site-footer a{
+    color:aliceblue;
+    text-decoration:none;
+}
+
+.site-footer a:hover{
+    color:#3366cc;
+}
+
+.footer-links{
+    padding-left:0;
+    list-style:none;
+}
+
+.footer-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 15px;
+}
+.footer-links a{
+    color:aliceblue;
+}
+
+.text-justify{
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links.inline li
+{
+    display: flex;
+    flex-direction: column;
+}
+.copyright-text
+{
+  margin-top: 20px;
+}
+
+@media (max-width:991px)
+{
+    .site-footer [class^=col-]
+    {
+    margin-bottom:30px;
+    }
+}
+@media (max-width:767px)
+{
+    .tambah{
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+    .container .box{
+        flex-direction: column;
+    }
+    .site-footer{
+        padding-bottom:0;
+    }
+    .site-footer .copyright-text,.site-footer .social-icons{
+        text-align:center;
+    }
+}
+
+.toggle input[type='checkbox'] {
+    display: none;
+}
+
+.toggle label {
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    transition: all ease-in-out 0.3s;
+    width: 60px;
+    height: 30px;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: auto;
+}
+
+.toggle label::after {
+    background-color: #800000;
+    border-radius: 50%;
+    content: '';
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    transition: all ease-in-out 0.3s;
+    width: 35%;
+    height: 80%;
+}
+
+.toggle input[type='checkbox']:checked ~ label {
+    background-color: aliceblue;
+    border-color: maroon;
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+    background-color: black;
+    transform: translateX(32px);
+}
+
+body.dark-theme .navigation{
+    background-color: black;
+}
+
+body.dark-theme .koleksi{
+    background-color: black;
+}
+
+body.dark-theme .container .box .poto{
+    background-color: darkslateblue;
+    box-shadow: 0 2px 10px darkslateblue;
+}
+
+body.dark-theme{
+    background-color: darkslateblue;
+}
+
+body.dark-theme .box-navigation #nav li:hover{
+    background-color: darkslateblue;
+}  
+
+.tombol{
+    margin: 30px 20px;
+    position: absolute;
+}
+body.dark-theme .tombol a{
+    background-color: darkslateblue;
+    color: aliceblue;
+}
+.tombol a{
+    padding: 10px 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    background-color: maroon;
+    color: aliceblue;
+    font-size: 20px;
+}
+.tombol a:hover{
+    opacity: 80%;
+}
